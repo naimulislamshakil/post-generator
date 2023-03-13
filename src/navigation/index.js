@@ -1,17 +1,17 @@
 const navigation = [
 	{
-		title: 'Solution',
-		route: '/solution',
-		dropdown: [
-			{
-				title: 'Content',
-				route: '/content',
-			},
-		],
+		title: 'HOME',
+		route: '/',
+		dropdown: false,
 	},
 	{
-		title: 'Socials',
-		route: '/socials',
+		title: 'ABOUT US',
+		route: '/about_us',
+		dropdown: false,
+	},
+	{
+		title: 'SERVICES',
+		route: '/services',
 		dropdown: [
 			{
 				title: 'Facebook',
@@ -20,18 +20,14 @@ const navigation = [
 		],
 	},
 	{
-		title: 'Resources',
-		route: '/resources',
+		title: 'PORTFOLIO',
+		route: '/portfolio',
 		dropdown: false,
 	},
+
 	{
-		title: 'Pricing',
-		route: '/price',
-		dropdown: false,
-	},
-	{
-		title: 'Contuct',
-		route: '/contact',
+		title: 'CONTUCT US',
+		route: '/contact_us',
 		dropdown: false,
 	},
 ];

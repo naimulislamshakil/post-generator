@@ -56,7 +56,7 @@ const index = () => {
 			<CssBaseline />
 			<AppBar
 				className="nav-font"
-				position="static"
+				position="fixed"
 				style={{ backgroundColor: '#212C4F' }}
 			>
 				<Container maxWidth="xl">
@@ -92,7 +92,11 @@ const index = () => {
 							>
 								{navigation.map((page) => (
 									<MenuItem key={page} onClick={handleCloseNavMenu}>
-										<Link href={page.route} textAlign="center">
+										<Link
+											className="word-spece"
+											href={page.route}
+											textAlign="center"
+										>
 											{page.title}
 										</Link>
 									</MenuItem>
@@ -117,7 +121,7 @@ const index = () => {
 								<Link
 									href={page.route}
 									key={page}
-									className="p-5"
+									className="p-5 word-spece"
 									sx={{ my: 2, color: 'white', display: 'block' }}
 								>
 									{page.title}
@@ -164,7 +168,7 @@ const index = () => {
 									variant="contained"
 									className="bg-[#36B88C] hover:bg-[#1f7458] rounded-full w-36"
 								>
-									LogIn
+									LOGIN
 								</Button>
 							)}
 						</Box>
