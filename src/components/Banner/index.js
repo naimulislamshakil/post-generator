@@ -17,7 +17,7 @@ const index = (props) => {
 			<Box>
 				<CssBaseline />
 				<Container maxWidth="xl">
-					<Grid container spacing={2}>
+					<Grid container>
 						<Grid sx={12} md={6}>
 							<Box className="flex justify-start h-[100vh] items-center">
 								<Box>
