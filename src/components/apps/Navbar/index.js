@@ -16,7 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from '@mui/material/styles';
 import Link from 'next/link';
-import navigation from '../../navigation';
+import navigation from '../../../navigation';
 import React, { useEffect, useState } from 'react';
 // import logo from '/images/digitalweb it ltd.png';
 
