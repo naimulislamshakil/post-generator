@@ -1,10 +1,18 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
-import BannerCarousel from '../components/BannerCarousel';
+import Banner from '../components/Banner';
+import { homepage_banner } from '@/constants/Banner';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+	const item = {
+		title: homepage_banner.title,
+		description: homepage_banner.description,
+		link: homepage_banner.link,
+		img: homepage_banner.img,
+		alt: homepage_banner.alt,
+	};
 	return (
 		<>
 			<Head>
@@ -14,7 +22,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<BannerCarousel />
+				<Banner item={item} />
 			</main>
 		</>
 	);

@@ -6,6 +6,7 @@ const index = ({ children }) => {
 	return (
 		<div>
 			<Navbar />
+			
 			{children}
 		</div>
 	);

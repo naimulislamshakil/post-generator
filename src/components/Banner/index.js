@@ -19,21 +19,20 @@ const index = (props) => {
 				<Container maxWidth="xl">
 					<Grid container>
 						<Grid sx={12} md={6}>
-							<Box className="flex justify-start h-[100vh] items-center">
+							<Box className="mt-12">
 								<Box>
-									<Typography variant="p" className="mt-3" color="#09A78E">
+									<Typography variant="p" className="mt-10" color="#09A78E">
 										{RELIABILITY_TRUST_QUALITY}
 									</Typography>
 									<Typography
-										variant="h2"
-										className="mt-3"
-										fontWeight="bold"
+										variant="h3"
+										className="mt-3 font-bold"
 										color="wheat"
 									>
 										{props.item.title}
 									</Typography>
 
-									<Typography variant="h6" className="mt-4" color="white">
+									<Typography variant="body1" className="mt-4" color="wheat">
 										{props.item.description}
 									</Typography>
 									<Button
